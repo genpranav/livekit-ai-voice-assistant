@@ -1,5 +1,14 @@
 ### STEPS TO RUN LOCALLY:
 
+my local setup,
+| Tool      | Version  |
+|------------|-----------|
+| OS         | Windows 11|
+| Python     | 3.12.8    |
+| Node.js    | 24.11.0   |
+| npm        | 11.6.1    |
+
+<br></br>
 1. clone this repository using, 
 ```bash
 git clone https://github.com/genpranav/livekit-ai-voice-assistant.git
@@ -15,7 +24,7 @@ DEEPGRAM_API_KEY=
 CARTESIA_API_KEY=
 GOOGLE_API_KEY=
 ```
-- /agent-starter-react/.env.local
+- ./agent-starter-react/.env.local
 ```
 LIVEKIT_URL=
 LIVEKIT_API_KEY=
@@ -27,9 +36,15 @@ easy access links to create these api keys,
 [GOOGLE AI STUDIO](https://aistudio.google.com/app/api-keys),
 [CARTESIA](https://play.cartesia.ai/keys)
 
+before the next steps be sure to navigate into the cloned repo directory,
+```powershell
+cd .\livekit-ai-voice-assistant\
+```
 
 3. open a terminal (terminal 1), run the following commands,
 ```powershell
+python -m venv venv
+venv/Scripts/activate
 pip install -r requirements.txt
 python agent.py download-files
 python agent.py start
@@ -39,7 +54,9 @@ Once you see the Livekit agent worker initilized and waiting for job you can pro
 
 4. open another terminal (terminal 2), navigate into the agent-starter-react folder using 
 ```powershell 
-cd agent-starter-react # navigate into the starter code folder
+cd agent-starter-react
+npm i
+npm run build
 npm run start
 ```
 
@@ -73,5 +90,7 @@ The existing cloud-based context for agent-to-room assignment can be transitione
 4. **Automated Worker Deployment Retries:**
 Deployment reliability can be improved by scripting automated retries for worker deployments, reducing manual intervention.
 
+5. **Transcription window UI:**
+When the conversation with the agent is long the transcribed text extends beyond some UI elements. This can be corrected to improve UX.
 
 ### VIDEO DEMO:
