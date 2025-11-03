@@ -8,7 +8,7 @@ my local setup,
 | Node.js    | 24.11.0   |
 | npm        | 11.6.1    |
 
-<br></br>
+
 1. clone this repository using, 
 ```bash
 git clone https://github.com/genpranav/livekit-ai-voice-assistant.git
@@ -60,6 +60,11 @@ npm run build
 npm run start
 ```
 
+5. Paste this link in your browser
+```powershell
+http://localhost:3000
+```
+
 ### ARCHITECTURE:
 
 The implementation of this voice agent is straight forward,
@@ -94,3 +99,4 @@ Deployment reliability can be improved by scripting automated retries for worker
 When the conversation with the agent is long the transcribed text extends beyond some UI elements. This can be corrected to improve UX.
 
 ### VIDEO DEMO:
+[🎬 LiveKit Voice Assistant](https://youtu.be/my0Rl38uq8I)
