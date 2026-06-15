@@ -79,7 +79,7 @@ http://localhost:3000
 This voice agent integrates [LiveKit](https://docs.livekit.io/agents/start/voice-ai/)’s agent hosting capabilities with their [Agent React Starter](https://github.com/livekit-examples/agent-starter-react/tree/main) frontend, customized for this implementation.
 
 <picture>
-<img src="./Architecture diagram.png">
+<img src="./architecture diagram.png">
 </picture>
 
 The backend LiveKit Agent is deployed using the Python SDK, with the voice pipeline configured. LiveKit manages worker health, state, and room assignments based on job requests triggered by room occupancy.
